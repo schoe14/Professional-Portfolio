@@ -1,43 +1,30 @@
 init();
+$.backstretch("Assets/images/mainBackground.png");
 
 $(document).ready(function () {
     $('.sidenav').sidenav();
 
-    window_size = $(window).height();
-    console.log(window_size)
+    if (PDFObject.supportsPDFs) {
+        console.log("Yay, this browser supports inline PDFs.");
+        PDFObject.embed("Assets/resume/Seohui-Choe.pdf", "#resume-holder");
+        $("#resume-holder").css("height", "33rem");
+        $("#resume-holder").css("border", "1rem solid rgb(107, 119, 141, 0.2)");
+    } else {
+        console.log("Boo, inline PDFs are not supported by this browser");
+        $("#resume-holder").html(/*html*/`
+        <p>Inline PDFs are not supported by this device. Click the link below.</p>
+        <a href="Assets/resume/Seohui-Choe.pdf" target="blank" style="color: #263859; font-weight: bold">Seohui's Resume <i class="fas fa-download"></i></a>
+        `);
+        $("#resume").css("margin-bottom", "40px");
+    }
 
-    $('#about-me').height(window_size);
+    $(".scrollLink").click(function (e) {
+        e.preventDefault();
+        let position = $($(this).attr("href")).offset().top - 180;
 
-    // $("a.scrollLink").on('click', function (event) {
-    //     if (this.hash !== "") {
-    //         // Prevent default anchor click behavior
-    //         event.preventDefault();
-
-    //         // Store hash
-    //         var hash = this.hash;
-
-    //         // Using jQuery's animate() method to add smooth page scroll
-    //         // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-    //         $('html, body').animate({
-    //             scrollTop: $(hash).offset().top
-    //         }, 800, function () {
-
-    //             // Add hash (#) to URL when done scrolling (default click behavior)
-    //             window.location.hash = hash;
-    //         });
-    //     } // End if
-    // });
-
-    // var position = $($(this).attr("data-target")).position().top + $('data-target').scrollTop()
-    // $('.html,body').animate({ scrollTop: position })
-
-    $("a.scrollLink").on("click", function (event) {
-        console.log($(this).attr("data-target"));
-        let targetSection = $(this).attr("data-target");
-        event.preventDefault();
-
-        $('html,body').animate({ scrollTop: $(targetSection).offset().top + $(targetSection).scrollTop() }, 500);
-        console.log($(targetSection).offset().top + $(targetSection).scrollTop())
+        $("body, html").animate({
+            scrollTop: position
+        }, 500);
     });
 });
 
@@ -48,8 +35,8 @@ function init() {
             <div class="row">
                 <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 firstCol">
                     <p id="p-header">About Me<div class="divider"></div></p>
-                    <div>Hello. I'm Seohui Choe and I am a Full Stack Developer based in Richmond, VA. I enjoy
-                        building clean, technical, user-friendly web applications.</div>
+                    <div>Hello. I'm <b>Seohui Choe</b> and I am a Full Stack Developer based in Richmond, VA. I enjoy
+                        creating <b>clean, technical, user-friendly</b> web applications.</div>
                 </div>
                 <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 secondCol">
                     <p id="p-header">Technical Skills<div class="divider"></div></p>
@@ -58,7 +45,7 @@ function init() {
                             <li><b>Languages:</b> Java, JavaScript/jQuery, HTML, CSS</li>
                             <li><b>CSS Framework:</b> Bootstrap, Materialize</li>
                             <li><b>Other Skills:</b> Analytical Skills, Problem Solving, Time Management, Technical Mindset, Teamwork</li>
-                            <li><b><i class="fas fa-heart"></i></b> And <u>life-long dedication to learning!</u>
+                            <li><b><i class="fas fa-heart" style="color: red"></i></b> And <u>life-long dedication to learning!</u>
                             <li>
                         </ul>
                     </div>
@@ -67,19 +54,19 @@ function init() {
 
             <div id="icons">
                 <span><i class="fab fa-js-square"></i></span>
+                <span><i class="fab fa-java"></i></span>
                 <span><i class="fab fa-css3-alt"></i></span>
                 <span><i class="fab fa-html5"></i></span>
-                <span><i class="fab fa-java"></i></span>
+                <span><i class="fab fa-bootstrap"></i></span>
                 <span><i class="fab fa-node-js"></i></span>
             </div>
 
              <div id="resume"> 
-             <p id="p-header">Resume<div class="divider"></div></p>
-                <div></div>
+                <p id="p-header">Resume<div class="divider"></div></p>
+                <div id="resume-holder">
+                </div>
              </div>
         </section>
-
-       
 
         <section class="container" id="pack-it">
             <p id="p-header">Pack-It<div class="divider"></div></p>
@@ -95,18 +82,14 @@ function init() {
                 <div class="card-reveal">
                     <span class="card-title grey-text text-darken-4"><i class="material-icons right">close</i></span>
                     <p style="font-size: larger;"> 
-                        Don't have anxiety about packing for your vacation ever again. Know the weather of your travel
-                        destination and let our Pack It logic tell you what kind of clothes you'll need during your
-                        trip. Pack It is carefully designed to generate clothing options for each day depending on the
-                        weather conditions of your travel destination. If it is raining at your destination, it will
-                        make sure to suggest rain items such as an umbrella. With Pack It, it is like hiring your
-                        personal stylist! Select the clothes you want from our suggestions, customize your own suitcase,
-                        and get updates on the weather at any time. You can even find Amazon Prime items if you only
-                        have few days left to leave.
+                        Don't have anxiety😟 about packing for your vacation ever again.<br>
+                        Know the weather of your travel destination and let our Pack It logic tell you what kind of clothes you'll need during your trip😃. <br>
+                        With Pack It, it is like hiring your personal stylist!🎉 <br>
                     </p>
                 </div>
             </div>
         </section>
+
         <section class="container" id="weather-dashboard">
             <p id="p-header">Weather-Dashboard<div class="divider"></div></p>
             <div class="card">
@@ -121,11 +104,14 @@ function init() {
                 <div class="card-reveal">
                     <span class="card-title grey-text text-darken-4"><i class="material-icons right">close</i></span>
                     <p style="font-size: larger;">
-                        🌞Accurate weather predictions are important for planning our day-to-day activities. 🚜 Farmers need information to help them plan for the planting and harvesting of their crops. ✈️ Airlines need to know about local weather conditions in order to schedule flights.
+                        🌞 Accurate weather predictions are important for planning our day-to-day activities. <br>
+                        🚜 Farmers need information to help them plan for the planting and harvesting of their crops. <br>
+                        ✈️ Airlines need to know about local weather conditions in order to schedule flights.
                     </p>
                 </div>
             </div>
         </section>
+
         <section class="container" id="day-planner">
             <p id="p-header">Day-Planner<div class="divider"></div></p>
             <div class="card">
@@ -140,12 +126,11 @@ function init() {
                 <div class="card-reveal">
                     <span class="card-title grey-text text-darken-4"><i class="material-icons right">close</i></span>
                     <p style="font-size: larger;">
-                        Planning helps you to be prepared for obstacles 💥 because part of the planning process is creating a contingency pan for unexpected problems in the fast-paced business environment 🏢
+                        Planning helps you to be prepared for obstacles💥 because part of the planning process is creating a contingency pan for unexpected problems in the fast-paced business environment.
                     </p>
                 </div>
             </div>
         </section>
         `)
-
 }
 

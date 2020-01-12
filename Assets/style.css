@@ -3,12 +3,11 @@ html, body {
     height: 100%;
     margin: 0 auto;
     padding: 0px;
-    overflow-x: hidden;
 }
 
 .jumbotron {
     font-family: 'Quicksand', sans-serif;
-    position: sticky;
+    position: fixed;
     background-color: #17223B;
     width: 100%;
     top: 0;
@@ -39,6 +38,10 @@ html, body {
     padding: 5px;
 }
 
+nav .sidenav-trigger {
+    height: 0;
+}
+
 nav .sidenav-trigger i, nav, nav .nav-wrapper i, nav a.sidenav-trigger, nav a.sidenav-trigger i {
     line-height: normal;
 }
@@ -67,13 +70,16 @@ ul {
 #icons {
     text-align: center;
     font-size: xx-large;
+    margin-bottom: 20px;
 }
 
 #icons i {
     padding: 20px
 }
 
-.main {}
+.main {
+    margin-top: 220px;
+}
 
 .jumbotron, .main, .footer {
     padding-left: 300px;
@@ -116,6 +122,10 @@ section {
     margin-bottom: 20px;
 }
 
+#resume-holder a:hover, #resume-holder a:active {
+    text-decoration: none;
+}
+
 @media only screen and (max-width: 992px) {
     .jumbotron, .main, .footer {
         padding-left: 0;
@@ -125,13 +135,19 @@ section {
     }
 }
 
-@media only screen and (max-width: 768px) {
-    /* nav, nav .nav-wrapper i, nav a.sidenav-trigger, nav a.sidenav-trigger i {
-        line-height: normal;
-    } */
+@media only screen and (min-width: 601px) {
+    nav, nav .nav-wrapper i, nav a.sidenav-trigger, nav a.sidenav-trigger i {
+        height: 0;
+    }
 }
 
-@media only screen and (max-width: 403px) {
+@media only screen and (max-width: 471px) {
+    .header, .header i {
+        font-size: large;
+    }
+    .main {
+        margin-top: 180px;
+    }
     #icons {
         font-size: x-large;
     }

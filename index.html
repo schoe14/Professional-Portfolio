@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <!--Import Google Icon Font-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
     <!--Import materialize.css-->
@@ -15,8 +14,13 @@
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://kit.fontawesome.com/0267c1aa62.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-backstretch/2.1.18/jquery.backstretch.js"
+        integrity="sha256-TZR9R7bkvIEFv4yxi8xFgNQUy4iZ5y9WSr0IcI6wehU=" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="Assets/style.css">
-    <title>Document</title>
+    <!-- Import pdfObject -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfobject/2.1.1/pdfobject.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfobject/2.1.1/pdfobject.min.js"></script>
+    <title>Seohui's Portfolio</title>
 </head>
 
 <body>
@@ -27,7 +31,6 @@
             <div id="hashtag"><i class="fas fa-hashtag"></i> Analytical Mindset</div>
         </div>
         <span><a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a></span>
-
     </nav>
 
     <div id="mainNav">
@@ -38,131 +41,31 @@
                         <img src="Assets/images/backgroundImg.jpeg" style="max-width: 100%;">
                     </div>
                     <a href="#!"><img class="circle" src="Assets/images/Seohui Choe.jpg" style="max-width: 100%"><a>
-                    <a href="#!"><span class="white-text name">Seohui Choe</span></a>
-                    <a href="#!"><span class="white-text email">chelsea.choe@gmail.com</span></a>
-                    <a href="#!"><span class="white-text email">(571) 292-4235</span></a>
+                            <a href="#!"><span class="white-text name">Seohui Choe</span></a>
+                            <a href="#!"><span class="white-text email">chelsea.choe@gmail.com</span></a>
+                            <a href="#!"><span class="white-text email">(571) 292-4235</span></a>
                 </div>
             </li>
-            <li><a href="https://github.com/schoe14" class="sidenav-close" target="blank"><i class="fab fa-github"></i>Github</a></li>
+            <li><a href="https://github.com/schoe14" class="sidenav-close" target="blank"><i
+                        class="fab fa-github"></i>Github</a></li>
             <li><a href="https://www.linkedin.com/in/seohui-choe-009522b6/" class="sidenav-close" target="blank"><i
                         class="fab fa-linkedin"></i>LinkedIn</a></li>
             <li>
                 <div class="divider"></div>
             </li>
-
-            <!-- <li><a href="#about-me" class="sidenav-close scrollLink">About Me</a></li>
+            <li><a href="#about-me" class="sidenav-close scrollLink">About Me</a></li>
+            <li><a href="#resume" class="sidenav-close scrollLink">Resume</a></li>
             <li>
                 <div class="divider"></div>
             </li>
             <li><a class="subheader">Portfolio</a></li>
             <li><a href="#pack-it" class="sidenav-close scrollLink">Pack-It</a></li>
             <li><a href="#weather-dashboard" class="sidenav-close scrollLink">Weather-Dashboard</a></li>
-            <li><a href="#day-planner" class="sidenav-close scrollLink">Day-Planner</a></li> -->
-
-            <li><a href="" class="sidenav-close scrollLink" data-target="#about-me">About Me</a></li>
-            <li>
-                <div class="divider"></div>
-            </li>
-            <li><a class="subheader">Portfolio</a></li>
-            <li><a href="" class="sidenav-close scrollLink" data-target="#pack-it">Pack-It</a></li>
-            <li><a href="" class="sidenav-close scrollLink" data-target="#weather-dashboard">Weather-Dashboard</a></li>
-            <li><a href="" class="sidenav-close scrollLink" data-target="#day-planner">Day-Planner</a></li>
-
-
+            <li><a href="#day-planner" class="sidenav-close scrollLink">Day-Planner</a></li>
         </ul>
     </div>
 
-    <div class="container main">
-        <!-- <section class="container" id="about-me">
-            <div class="row">
-                <div class="col s12 m6 l6">
-                    <div class="content">
-                        <p id="p-header">About Me<div class="divider"></div>
-                        </p>
-                        <div>Hello. I'm Seohui Choe and I am a Full Stack Developer based in Richmond, VA. I enjoy
-                            building clean, technical, user-friendly web applications.</div>
-                    </div>
-                </div>
-                <div class="col s12 m6 l6">
-                    <div class="content">
-                        <p id="p-header">Technical Skills<div class="divider"></div>
-                        </p>
-                        <div class="skillsList">
-                            <ul>
-                                <li>Languages: Java, JavaScript, jQuery, HTML, CSS</li>
-                                <li>CSS Framework: Bootstrap, Materialize</li>
-                                <li>Other Skills: Analytical Skills, Problem Solving, Time Management, Teamwork</l>
-                                <li><i class="fas fa-chalkboard-teacher"></i> And life-long dedication to learning!
-                                <li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="container" id="resume">
-            <div>resume</div>
-        </section>
-        <section class="container" id="pack-it">
-            <div class="card">
-                <div class="card-image waves-effect waves-block waves-light">
-                    <img class="activator" src="Assets/images/pack-it-screenshot.JPG">
-                </div>
-                <div class="card-action">
-                    <a href="https://jonesec2.github.io/Pack-It/" target="blank">Live link</a>
-                    <a href="https://github.com/jonesec2/Pack-It" target="blank"><i class="fab fa-github"></i>
-                        Pack-It</a>
-                </div>
-                <div class="card-reveal">
-                    <span class="card-title grey-text text-darken-4"><i class="material-icons right">close</i></span>
-                    <p style="font-size: larger;"> Don't have anxiety about packing for your vacation ever again. Know
-                        the weather of your travel
-                        destination and let our Pack It logic tell you what kind of clothes you'll need during your
-                        trip. Pack It is carefully designed to generate clothing options for each day depending on the
-                        weather conditions of your travel destination. If it is raining at your destination, it will
-                        make sure to suggest rain items such as an umbrella. With Pack It, it is like hiring your
-                        personal stylist! Select the clothes you want from our suggestions, customize your own suitcase,
-                        and get updates on the weather at any time. You can even find Amazon Prime items if you only
-                        have few days left to leave.
-                    </p>
-                </div>
-            </div>
-        </section>
-        <section class="container" id="weather-dashboard">
-            <div class="card">
-                <div class="card-image waves-effect waves-block waves-light">
-                    <img class="activator" src="Assets/images/weather-dashboard-screenshot.JPG">
-                </div>
-                <div class="card-action">
-                    <a href="https://schoe14.github.io/Weather-Dashboard/" target="blank">Live link</a>
-                    <a href="https://github.com/schoe14/Weather-Dashboard" target="blank"><i class="fab fa-github"></i>
-                        Weather-Dashboard</a>
-                </div>
-                <div class="card-reveal">
-                    <span class="card-title grey-text text-darken-4"><i class="material-icons right">close</i></span>
-                    <p style="font-size: larger;">
-                    </p>
-                </div>
-            </div>
-        </section>
-        <section class="container" id="day-planner">
-            <div class="card">
-                <div class="card-image waves-effect waves-block waves-light">
-                    <img class="activator" src="Assets/images/day-planner-screenshot.JPG">
-                </div>
-                <div class="card-action">
-                    <a href="https://schoe14.github.io/Day-Planner/" target="blank">Live link</a>
-                    <a href="https://github.com/schoe14/Day-Planner" target="blank"><i class="fab fa-github"></i>
-                        Day-Planner</a>
-                </div>
-                <div class="card-reveal">
-                    <span class="card-title grey-text text-darken-4"><i class="material-icons right">close</i></span>
-                    <p style="font-size: larger;">
-                    </p>
-                </div>
-            </div>
-        </section> -->
-    </div>
+    <div class="container main"></div>
 
     <script type="text/javascript" src="Assets/materialize/js/materialize.min.js"></script>
     <script src="Assets/script.js"></script>
