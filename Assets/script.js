@@ -44,6 +44,10 @@ function init() {
                         <ul>
                             <li><b>Languages:</b> Java, JavaScript/jQuery, HTML, CSS</li>
                             <li><b>CSS Framework:</b> Bootstrap, Materialize</li>
+                            <li><b>Browser Based Technologies:</b> Responsive Design, Handlebars, Local Storage</li>
+                            <li><b>Databases:</b> MySQL</li>
+                            <li><b>Deployment:</b> Heroku, Git</li>
+                            <li><b>Server-Side Deployment:</b> Express.js, Node.js</li>
                             <li><b>Other Skills:</b> Analytical Skills, Problem Solving, Time Management, Technical Mindset, Teamwork</li>
                             <li><b><i class="fas fa-heart" style="color: red"></i></b> And <u>life-long dedication to learning!</u>
                             <li>
@@ -85,6 +89,28 @@ function init() {
                         Don't have anxiety😟 about packing for your vacation ever again.<br>
                         Know the weather of your travel destination and let our Pack It logic tell you what kind of clothes you'll need during your trip😃. <br>
                         With Pack It, it is like hiring your personal stylist!🎉 <br>
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="container" id="burger">
+            <p id="p-header">Eat-Da-Burger!<div class="divider"></div></p>
+            <div class="card">
+                <div class="card-image waves-effect waves-block waves-light">
+                    <img class="activator" src="Assets/images/eat-da-burger-screenshot.JPG">
+                </div>
+                <div class="card-action">
+                    <a href="https://warm-savannah-43585.herokuapp.com/" target="blank">Live link</a>
+                    <a id="burger-github" href="https://github.com/schoe14/Burger" target="blank"><i class="fab fa-github"></i>
+                    Eat-Da-Burger!</a>
+                </div>
+                <div class="card-reveal">
+                    <span class="card-title grey-text text-darken-4"><i class="material-icons right">close</i></span>
+                    <p style="font-size: larger;">
+                        Add your favorite burger <i class="fas fa-hamburger"></i> and devour it! <br>
+                        Burgers that have been eaten go to the right side with an option to eat again. <br>
+                        Burgers that are available to eat stay on the left side with options to devour it or delete it.
                     </p>
                 </div>
             </div>
