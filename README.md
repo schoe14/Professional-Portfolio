@@ -19,4 +19,4 @@ Enjoy clean, user-friendly and even fully mobile-responsive application! :+1:
     * Git
 
 # Live link
-    :raising_hand_woman: [Seohui's Portfolio](https://schoe14.github.io/Professional-Portfolio/ "Seohui's Portfolio")
+    :raising_hand_woman: [Seohui's Portfolio](https://schoe14.github.io/Professional-Portfolio/)
