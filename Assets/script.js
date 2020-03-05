@@ -47,7 +47,7 @@ function init() {
                             <li><b>Browser Based Technologies:</b> Responsive Design, Handlebars, Local Storage</li>
                             <li><b>Databases:</b> MongoDB, MySQL</li>
                             <li><b>Deployment:</b> Heroku, Git</li>
-                            <li><b>Server-Side Deployment:</b> Express.js, Node.js</li>
+                            <li><b>Server-Side Deployment:</b> Express.js, Node.js, User Authentication</li>
                             <li><b>Other Skills:</b> Analytical Skills, Problem Solving, Time Management, Technical Mindset, Teamwork</li>
                             <li><b><i class="fas fa-heart" style="color: red"></i></b> And <u>life-long dedication to learning!</u>
                             <li>
