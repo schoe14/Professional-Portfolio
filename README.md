@@ -9,14 +9,14 @@ Enjoy clean, user-friendly and even fully mobile-responsive application! :+1:
 <a href="https://schoe14.github.io/Professional-Portfolio/"><img src="https://github.com/schoe14/Professional-Portfolio/blob/master/Assets/images/portfolio-mobile-screenshot2.JPG" style="float: left"></a>
 
 # Tech/framework used
-* JavaScript/j-Query
-* HTML
-* CSS
-* Bootstrap 4
-* Materialize
-* Git
-* Visual Studio Code
-* Github
-* GitLab
-* Slack
-* Google Drive
+* Browser-based
+    * JavaScript/j-Query
+    * HTML
+    * CSS
+    * Bootstrap 4
+    * Materialize
+* Deployment
+    * Git
+
+# Live link
+    :raising_hand_woman: [Seohui's Portfolio](https://schoe14.github.io/Professional-Portfolio/ "Seohui's Portfolio")
