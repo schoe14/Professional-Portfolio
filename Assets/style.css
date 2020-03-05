@@ -127,6 +127,10 @@ section {
     text-decoration: none;
 }
 
+#good-cuisine .card-image {
+    height: 450px;
+}
+
 @media only screen and (max-width: 992px) {
     .jumbotron, .main, .footer {
         padding-left: 0;

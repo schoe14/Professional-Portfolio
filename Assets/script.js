@@ -45,7 +45,7 @@ function init() {
                             <li><b>Languages:</b> Java, JavaScript/jQuery, HTML, CSS</li>
                             <li><b>CSS Framework:</b> Bootstrap, Materialize</li>
                             <li><b>Browser Based Technologies:</b> Responsive Design, Handlebars, Local Storage</li>
-                            <li><b>Databases:</b> MySQL</li>
+                            <li><b>Databases:</b> MongoDB, MySQL</li>
                             <li><b>Deployment:</b> Heroku, Git</li>
                             <li><b>Server-Side Deployment:</b> Express.js, Node.js</li>
                             <li><b>Other Skills:</b> Analytical Skills, Problem Solving, Time Management, Technical Mindset, Teamwork</li>
@@ -70,6 +70,26 @@ function init() {
                 <div id="resume-holder">
                 </div>
              </div>
+        </section>
+
+        <section class="container" id="good-cuisine">
+            <p id="p-header">Good-Cuisine<div class="divider"></div></p>
+            <div class="card">
+                <div class="card-image waves-effect waves-block waves-light">
+                    <img class="activator" src="Assets/images/good-cuisine-screenshot.JPG">
+                </div>
+                <div class="card-action">
+                    <a href="https://good-cuisine.herokuapp.com/" target="blank">Live link</a>
+                    <a href="https://github.com/schoe14/Good-Cuisine" target="blank"><i class="fab fa-github"></i>
+                        Good-Cuisine</a>
+                </div>
+                <div class="card-reveal">
+                    <span class="card-title grey-text text-darken-4"><i class="material-icons right">close</i></span>
+                    <p style="font-size: larger;"> 
+                        We all have preferences on foods or even dietary restrictions, so we decided to make an app that makes it easier to filter recipes by these parameters and save recipes in one location that is easily accessible.
+                    </p>
+                </div>
+            </div>
         </section>
 
         <section class="container" id="pack-it">
